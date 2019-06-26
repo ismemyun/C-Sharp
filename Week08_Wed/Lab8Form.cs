@@ -35,14 +35,12 @@ namespace Week08_Wed
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            UserName = txtName.Text;
-            UserAge = float.Parse(lblAge.Text);
+            UserName = nameTextBox.Text;
+            UserAge = float.Parse(ageTextBox.Text);
 
-            lblOutput.Text = txtName.Text + " " + txtAge.Text;
-
-
-            txtName.Text = string.Empty;
-            lblAge.Text = string.Empty;
+            lblOutput.Text = nameTextBox.Text + " " + ageTextBox.Text;
+            nameTextBox.Text = string.Empty;
+            ageTextBox.Text = string.Empty;
 
             
         }
@@ -55,14 +53,14 @@ namespace Week08_Wed
         /// <param name="e"></param>
         private void Lab8Form_Load(object sender, EventArgs e)
         {
-            btnSubmit.Enabled = false;
+            sumbitButton.Enabled = false;
 
                 
         }
 
         private void txtAge_TextChanged(object sender, EventArgs e)
         {
-            btnSubmit.Enabled = true;
+            sumbitButton.Enabled = true;
         }
     }
 }
