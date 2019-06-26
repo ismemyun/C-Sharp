@@ -33,7 +33,7 @@ namespace Week08_Wed
 
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private void sumbitButton_Click(object sender, EventArgs e)
         {
             UserName = nameTextBox.Text;
             UserAge = float.Parse(ageTextBox.Text);
@@ -58,7 +58,7 @@ namespace Week08_Wed
                 
         }
 
-        private void txtAge_TextChanged(object sender, EventArgs e)
+        private void ageTextBox_TextChanged(object sender, EventArgs e)
         {
             sumbitButton.Enabled = true;
         }

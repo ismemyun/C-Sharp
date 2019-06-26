@@ -102,7 +102,7 @@
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.Size = new System.Drawing.Size(154, 31);
             this.ageTextBox.TabIndex = 3;
-            this.ageTextBox.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
+            this.ageTextBox.TextChanged += new System.EventHandler(this.ageTextBox_TextChanged);
             // 
             // sumbitButton
             // 
@@ -113,7 +113,7 @@
             this.sumbitButton.TabIndex = 4;
             this.sumbitButton.Text = "Submit";
             this.sumbitButton.UseVisualStyleBackColor = true;
-            this.sumbitButton.Click += new System.EventHandler(this.btnSubmit_Click);
+            this.sumbitButton.Click += new System.EventHandler(this.sumbitButton_Click);
             // 
             // lblOutput
             // 
